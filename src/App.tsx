@@ -1,20 +1,20 @@
 import { Navigation } from './components/Navigation'
-import { HeroSection } from './components/Hero'
-import { AboutSection } from './components/About'
-import { SkillsSection } from './components/Skills'
-import { ProjectsSection } from './components/Projects'
-import { ContactSection } from './components/Contact'
+import { Hero } from './components/Hero'
+import { About } from './components/About.tsx'
+import { Skills } from './components/Skills'
+import { Projects } from './components/Projects'
+import { Contact } from './components/Contact'
 
 export default function App() {
   return (
     <div className="dark min-h-screen bg-black text-white">
-      <Navigation />
+      {/* <Navigation /> */}
       <main>
-        <Hero />
+        {/* <Hero /> */}
         <About />
-        <Skills />
+        {/* <Skills />
         <Projects />
-        <Contact />
+        <Contact /> */}
       </main>
     </div>
   )
