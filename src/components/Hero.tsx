@@ -16,10 +16,10 @@ export function Hero() {
     <section id="home" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
+        {[...Array(50)].map((_, i) => ( // Logica das "estrelas" de fundo
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-white/20 rounded-full"
+            className="absolute w-1 h-1 bg-white/20 rounded-full" // Estilo dos pontos de fundo
             initial={{ opacity: 0 }}
             animate={{ 
               opacity: [0, 1, 0],
@@ -71,7 +71,7 @@ export function Hero() {
           >
             Eu sou{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-              Programador
+              programador e desenvolvedor
             </span>
             {' '}especializado em{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
@@ -85,8 +85,8 @@ export function Hero() {
             transition={{ delay: 0.8 }}
             className="text-gray-400 text-lg max-w-2xl mx-auto mb-8"
           >
-            I craft exceptional digital experiences using cutting-edge technologies like React, Node.js, and TypeScript. 
-            Passionate about clean code, user experience, and bringing ideas to life.
+           Transformo ideias em código eficiente com React, Node.js e Ruby. 
+           Guiado por design, lógica e propósito, crio soluções que simplificam o dia a dia e impulsionam o trabalho.
           </motion.p>
           
           <motion.div
