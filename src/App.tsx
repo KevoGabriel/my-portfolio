@@ -7,10 +7,10 @@ import { Contact } from './components/Contact.tsx'
 
 export default function App() {
   return (
-    <div className="dark min-h-screen bg-black text-white">
+    <div className="dark min-h-screen bg-black text-white"> 
       <Navigation />
       <main>
-        {/* <Hero /> */}
+        <Hero />
         <About />
         {/* <Skills />
         <Projects />

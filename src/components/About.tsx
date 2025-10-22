@@ -98,12 +98,12 @@ export function About() {
                 "Team Player",
                 "Quick Learner",
                 "Detail Oriented",
-              ].map((trait, index) => (
+              ].map((trait, index) => ( // trait é o item do array para cada iteração do map
                 <span
-                  key={trait}
-                  className="px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full text-sm border border-emerald-500/30"
+                  key={trait} // Usando trait como chave única para cada span
+                  className="px-4 py-2 bg-red-950 text-red-500 rounded-full text-sm border border-red-500/30"
                 >
-                  {trait}
+                  {trait} 
                 </span>
               ))}
             </motion.div>

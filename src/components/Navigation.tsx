@@ -23,22 +23,22 @@ export function Navigation() {
 
   return (
     <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+      initial={{ y: -100 }} // Inicialmente fora da tela
+      animate={{ y: 0 }} // Anima para a posição
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${ // Acrescenta cor de fundo ao rolar
+        scrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent' // Verifica se está rolando e então aplica o transparente
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <motion.div
+          <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="text-white text-xl font-medium"
           >
-            &lt;Kevin Gabriel Sehnem /&gt;
-          </motion.div>
+            &lt;Kevin Gabriel Sehnem /&gt; 
+          </motion.div> 
           
           <div className="hidden md:flex items-center space-x-8">
             {['home', 'about', 'skills', 'projects', 'contact'].map((item, index) => (
