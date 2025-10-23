@@ -69,21 +69,14 @@ export function About() {
             </h3>
             <p className="text-gray-300 leading-relaxed">
               With over {experience} years of experience in web
-              development, I've had the privilege of working
-              with startups and established companies to bring
-              their digital visions to life. My journey began
-              with a curiosity about how websites work, and it
-              has evolved into a passion for creating seamless,
-              performant applications.
+              development Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Soluta sequi nesciunt dolore enim amet quisquam necessitatibus? 
+              Eveniet vel minus tempora ullam aspernatur fugiat earum molestias nobis modi 
+              veniam natus, error accusamus maiores? Culpa recusandae repellendus id harum 
+              repellat earum sapiente et molestias cum aut quam, sequi, nam quo expedita dignissimos 
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I specialize in React, Node.js, and modern
-              JavaScript frameworks, but I'm always eager to
-              learn new technologies that can help me build
-              better solutions. When I'm not coding, you'll find
-              me contributing to open-source projects, writing
-              technical articles, or exploring the latest in web
-              technologies.
+              I specialize in React, Node.js
             </p>
 
             <motion.div
@@ -127,8 +120,8 @@ export function About() {
                 }}
                 viewport={{ once: true }}
               >
-                <Card className="p-6 bg-black/50 border-white/10 hover:border-emerald-500/50 transition-all duration-300 group">
-                  <div className="text-emerald-400 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Card className="p-6 bg-black/50 border-white/10 hover:border-amber-500 transition-all duration-300 group">
+                  <div className="text-amber-200 mb-4 group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className="w-8 h-8" />
                   </div>
                   <h4 className="text-white text-lg mb-2">

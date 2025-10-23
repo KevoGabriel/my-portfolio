@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 
 export function Hero() { 
   const scrollToProjects = () => { // Função para rolar até a seção de projetos
-    const element = document.getElementById('projects')
+    const element = document.getElementById('projetos')
     if (element) { // Verifica se o elemento existe
       element.scrollIntoView({ behavior: 'smooth' }) // Rola suavemente até o elemento
     }
@@ -48,7 +48,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-emerald-400 text-lg tracking-wider"
+            className="text-amber-700 text-lg tracking-wider"
           >
             Olá! Meu nome é
           </motion.p>
