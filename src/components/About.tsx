@@ -15,32 +15,32 @@ export function About() {
   const features = [
     {
       icon: Code,
-      title: "Clean Code",
+      title: "Código Limpo",
       description:
-        "Writing maintainable, scalable, and efficient code that stands the test of time.",
+        "Escrever código limpo, escalável e eficiente que resiste ao tempo, essa é a regra.",
     },
     {
       icon: Lightbulb,
-      title: "Innovation",
+      title: "Inovação",
       description:
-        "Always exploring new technologies and creative solutions to complex problems.",
+        "Sempre explorando novas tecnologias e soluções criativas para problemas complexos.",
     },
     {
       icon: Users,
-      title: "Collaboration",
+      title: "Colaboração",
       description:
-        "Working effectively with teams to deliver exceptional user experiences.",
+        "Acredito que a união entre pensamentos e pontos de vista geram resultados e soluções excepcionais.",
     },
     {
       icon: Coffee,
-      title: "Dedication",
+      title: "Dedicação",
       description:
-        "Committed to continuous learning and staying current with industry trends.",
+        `"Kevin, você tem PHD em força de vontade.".Um dos elogios mais importantes para mim, hoje faço deste meu slogan.`,
     },
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-900">
+    <section id="sobre" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -52,7 +52,7 @@ export function About() {
           <h2 className="text-4xl md:text-5xl text-white mb-6">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-700 mx-auto"></div>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -94,14 +94,14 @@ export function About() {
               className="flex flex-wrap gap-3 mt-6"
             >
               {[
-                "Problem Solver",
-                "Team Player",
-                "Quick Learner",
-                "Detail Oriented",
+                "Resolutivo",
+                "Trabalho em equipe",
+                "Aprendiz nato",
+                "Orientado a resultados",
               ].map((trait, index) => ( // trait é o item do array para cada iteração do map
                 <span
                   key={trait} // Usando trait como chave única para cada span
-                  className="px-4 py-2 bg-red-950 text-red-500 rounded-full text-sm border border-red-500/30"
+                  className="px-4 py-2 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full text-sm"
                 >
                   {trait} 
                 </span>

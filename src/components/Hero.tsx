@@ -13,8 +13,7 @@ export function Hero() {
   }
 
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
-      {/* Animated background elements */}
+    <section id="inicio" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => ( // Logica das "estrelas" de fundo
           <motion.div
