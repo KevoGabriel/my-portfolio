@@ -2,7 +2,6 @@
 
 import { motion } from 'motion/react'
 import { Card } from './ui/card.tsx'
-import { Button } from './ui/button.tsx'
 import { ExternalLink, Github } from 'lucide-react'
 import { ImageWithFallback } from './ui/ImageWithFallback.tsx'
 
@@ -145,7 +144,7 @@ export function Projects() {
           ))}
         </div>
 
-        {/* Other Projects */}
+        {/* Outros projetos */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
