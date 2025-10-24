@@ -8,19 +8,19 @@ import { ImageWithFallback } from './ui/ImageWithFallback.tsx'
 export function Projects() {
   const projects = [
     {
+      title: 'PostUp - Um clone do Trello',
+      description: 'Um aplicativo web de gerenciamento de tarefas inspirado no Trello, ainda em desenvolvimento. Possui landingpage, autenticação pelo Clerk, criação e gererenciamento de quadros, colaboração, planos e muito mais.',
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
+      technologies: ['Next.js', 'Tailwind', 'Clerk', 'PostgreSQL', 'TypeScript'],
+      github: 'https://github.com/KevoGabriel/postup',
+      live: '/',
+      featured: true
+    },
+    {
       title: 'E-Commerce Platform',
       description: 'A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
       technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
-      github: '#',
-      live: '#',
-      featured: true
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
       github: '#',
       live: '#',
       featured: true
@@ -67,7 +67,7 @@ export function Projects() {
   const otherProjects = projects.filter(p => !p.featured)
 
   return (
-    <section id="projetos" className="py-20 bg-gray-900">
+    <section id="projetos" className="py-20 bg-zinc-900">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -77,7 +77,7 @@ export function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl text-white mb-6">Principais projetos</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-700 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
             Alguns projetos feitos com ❤️ para mostrar minhas habilidades e experiências.
           </p>
@@ -93,7 +93,7 @@ export function Projects() {
               transition={{ delay: index * 0.2, duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Card className="group bg-black/50 border-white/10 overflow-hidden hover:border-emerald-500/50 transition-all duration-500">
+              <Card className="group bg-black/50 border-white/10 overflow-hidden hover:border-amber-500 transition-all duration-500">
                 <div className="relative overflow-hidden">
                   <ImageWithFallback
                     src={project.image}
@@ -106,7 +106,7 @@ export function Projects() {
                       href={project.github}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
+                      className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-all duration-300"
                     >
                       <Github className="w-5 h-5" />
                     </motion.a>
@@ -114,7 +114,7 @@ export function Projects() {
                       href={project.live}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
+                      className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-all duration-300"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </motion.a>
@@ -122,7 +122,7 @@ export function Projects() {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">
+                  <h3 className="text-xl text-white mb-3 group-hover:text-amber-400 transition-colors duration-300">
                     {project.title}
                   </h3>
                   <p className="text-gray-400 mb-4 leading-relaxed">
@@ -132,7 +132,7 @@ export function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-sm border border-emerald-500/30"
+                        className="px-3 py-1 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full text-sm"
                       >
                         {tech}
                       </span>
@@ -175,13 +175,13 @@ export function Projects() {
                   <div className="absolute top-3 right-3 flex space-x-2">
                     <a
                       href={project.github}
-                      className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
+                      className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-all duration-300"
                     >
                       <Github className="w-4 h-4" />
                     </a>
                     <a
                       href={project.live}
-                      className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-emerald-500 transition-all duration-300"
+                      className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-all duration-300"
                     >
                       <ExternalLink className="w-4 h-4" />
                     </a>
@@ -189,7 +189,7 @@ export function Projects() {
                 </div>
                 
                 <div className="p-4">
-                  <h4 className="text-lg text-white mb-2 group-hover:text-emerald-400 transition-colors duration-300">
+                  <h4 className="text-lg text-white mb-2 group-hover:text-amber-400 transition-colors duration-300">
                     {project.title}
                   </h4>
                   <p className="text-gray-400 text-sm mb-3 line-clamp-3">
