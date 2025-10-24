@@ -74,7 +74,7 @@ export function About() {
               Apaixonado por criar soluções que economizam tempo, alavancam resultados e que prendem a atenção.
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Cresci rodeado por curiosidade e tecnologia, com uma curiosidade como de uma criança, que desde então me trouxe experiência e conhecimento. Hoje com mais de {experience} anos de experiência em desenvolvimento e programação, tenho focado em soluções modernas, tanto na área web quanto em aplicações paralelas, como plugins SketchUp, para automatizar determinados processos e tarefas.
+              Desde pequeno estive rodeado por curiosidade e tecnologia, que me fez crescer com uma afinidade por sistemas e pensamento inovativo e desde então me trouxe experiência e conhecimento. Hoje com mais de {experience} anos de experiência em desenvolvimento e programação, tenho focado em soluções modernas, tanto na área web quanto em aplicações paralelas, como plugins SketchUp, para automatizar determinados processos e tarefas.
             </p>
             <p className="text-gray-300 leading-relaxed">
               Nos últimos anos, tenho me especializado em desenvolvimento web full-stack, com uma "queda" para o lado frontend, utilizando tecnologias como React, Node.js e então em Ruby para SketchUp SDK.
