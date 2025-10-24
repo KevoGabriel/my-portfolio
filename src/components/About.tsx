@@ -35,7 +35,7 @@ export function About() {
       icon: Coffee,
       title: "Dedicação",
       description:
-        `"Kevin, você tem PHD em força de vontade.".Um dos elogios mais importantes para mim, hoje faço deste meu slogan.`,
+        `"Kevin, você tem PHD em força de vontade". Um dos elogios mais importantes para mim, hoje faço deste meu slogan.`,
     },
   ];
 
@@ -63,20 +63,21 @@ export function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
+            <div className="flex justify-center align-middle">
+            <img
+              src="../assets/profile.jpg"
+              alt="Foto de Kevin Gabriel Sehnem"
+              className="w-[145px] h-[145px] flex align-middle rounded-full border-2 border-amber-300 object-cover"
+              />
+            </div>              
             <h3 className="text-2xl text-white mb-4">
-              Passionate about creating digital experiences that
-              matter
+              Apaixonado por criar soluções que economizam tempo, alavancam resultados e que prendem a atenção.
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              With over {experience} years of experience in web
-              development Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Soluta sequi nesciunt dolore enim amet quisquam necessitatibus? 
-              Eveniet vel minus tempora ullam aspernatur fugiat earum molestias nobis modi 
-              veniam natus, error accusamus maiores? Culpa recusandae repellendus id harum 
-              repellat earum sapiente et molestias cum aut quam, sequi, nam quo expedita dignissimos 
+              Cresci rodeado por curiosidade e tecnologia, com uma curiosidade como de uma criança, que desde então me trouxe experiência e conhecimento. Hoje com mais de {experience} anos de experiência em desenvolvimento e programação, tenho focado em soluções modernas, tanto na área web quanto em aplicações paralelas, como plugins SketchUp, para automatizar determinados processos e tarefas.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I specialize in React, Node.js
+              Nos últimos anos, tenho me especializado em desenvolvimento web full-stack, com uma "queda" para o lado frontend, utilizando tecnologias como React, Node.js e então em Ruby para SketchUp SDK.
             </p>
 
             <motion.div

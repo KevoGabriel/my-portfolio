@@ -10,14 +10,14 @@ export function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'kevinsehnem123@gmail.com',
-      href: 'mailto:kevinsehnem123@gmail.com.com'
+      value: 'kevin.dev.seh@gmail.com',
+      href: 'mailto:kevin.dev.seh@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
       value: '+55 54 99699-5036',
-      href: 'tel:+5554996995036'
+      href: 'https://wa.me/5554996995036'
     }
   ]
 
@@ -25,7 +25,7 @@ export function Contact() {
     { icon: Github, href: 'https://github.com/KevoGabriel', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/kevinsehnem', label: 'LinkedIn' },
     { icon: Instagram, href: 'https://www.instagram.com/kevin.script/', label: 'Instagram' },
-    { icon: Mail, href: 'mailto:kevinsehnem123@gmail.com', label: 'Email' }
+    { icon: Mail, href: 'mailto:kevin.dev.seh@gmail.com', label: 'Email' }
   ]
 
   return (

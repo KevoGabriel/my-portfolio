@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react'
 import { Button } from './ui/button.tsx'
-import { Github, Linkedin, Mail, FileUser } from 'lucide-react'
+import { Github, Linkedin, FileUser } from 'lucide-react'
 
 export function Hero() { 
   const scrollToProjects = () => { // Função para rolar até a seção de projetos
@@ -68,9 +68,9 @@ export function Hero() {
             transition={{ delay: 0.6 }}
             className="text-2xl md:text-4xl text-gray-300 mb-8"
           >
-            Eu sou{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-300">
-              programador e desenvolvedor{' '}
+            Eu sou
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-600">
+              {' '}programador{' '}
             </span>
             especializado em aplicações e design web.
           </motion.div>
@@ -99,7 +99,7 @@ export function Hero() {
             </Button>
             
             <div className="flex items-center space-x-4">
-              {[
+              {[ 
                 { icon: Github, href: 'https://github.com/KevoGabriel' },
                 { icon: Linkedin, href: 'https://linkedin.com/in/kevinsehnem' },
                 { icon: FileUser, href: 'https://drive.google.com/uc?export=download&id=1kycN4tHd4RTkaX2ch5pUxE6kyHtgJ3BE'}
@@ -107,8 +107,8 @@ export function Hero() {
                 <motion.a
                   key={index}
                   href={href}
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  target='_blank' // Abre o link em uma nova aba
+                  rel='noopener noreferrer' // Segurança ao abrir links externos
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.2 + index * 0.1 }}
@@ -118,20 +118,6 @@ export function Hero() {
                 </motion.a>
               ))}
             </div>
-          </motion.div>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-white/60"
-          >
           </motion.div>
         </motion.div>
       </div>
