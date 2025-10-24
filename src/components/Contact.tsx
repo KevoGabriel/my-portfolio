@@ -22,10 +22,10 @@ export function Contact() {
   ]
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Mail, href: '#', label: 'Email' }
+    { icon: Github, href: 'https://github.com/KevoGabriel', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/kevinsehnem', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/kevin.script/', label: 'Instagram' },
+    { icon: Mail, href: 'mailto:kevinsehnem123@gmail.com', label: 'Email' }
   ]
 
   return (
@@ -39,7 +39,7 @@ export function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl text-white mb-6">Entre em contato</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-700 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
             Estou sempre aberto a novos projetos e ideias.
             Vamos discutir como podemos trabalhar juntos!
@@ -76,9 +76,9 @@ export function Contact() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="flex items-center space-x-4 p-4 bg-gray-900/50 rounded-lg border border-white/10 hover:border-emerald-500/50 transition-all duration-300 group"
+                  className="flex items-center space-x-4 p-4 bg-zinc-900 rounded-lg border border-white/10 hover:border-amber-500/50 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500/30 transition-all duration-300">
+                  <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center text-yellow-400 group-hover:bg-emerald-500/30 transition-all duration-300">
                     <info.icon className="w-6 h-6" />
                   </div>
                   <div>
@@ -102,7 +102,7 @@ export function Contact() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-emerald-500 hover:text-white transition-all duration-300"
+                    className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-white hover:bg-white/20 hover:text-white transition-all duration-300"
                   >
                     <social.icon className="w-5 h-5" />
                   </motion.a>

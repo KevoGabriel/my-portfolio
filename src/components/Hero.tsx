@@ -13,7 +13,7 @@ export function Hero() {
   }
 
   return (
-    <section id="inicio" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
+    <section id="inicio" className="min-h-screen bg-gradient-to-br from-black via-orange-950 to-black flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => ( // Logica das "estrelas" de fundo
           <motion.div
@@ -44,14 +44,14 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <motion.p // Saudação inicial
+          <motion.h2 // Saudação inicial
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-amber-700 text-lg tracking-wider"
+            className="text-amber-300 text-xl tracking-wider"
           >
             Olá! Meu nome é
-          </motion.p>
+          </motion.h2>
           
           <motion.h1 // h1 com o nome
             initial={{ opacity: 0, y: 20 }}
@@ -69,13 +69,10 @@ export function Hero() {
             className="text-2xl md:text-4xl text-gray-300 mb-8"
           >
             Eu sou{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-              programador e desenvolvedor
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-300">
+              programador e desenvolvedor{' '}
             </span>
-            {' '}especializado em{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              aplicações web e soluções modernas.
-            </span>
+            especializado em aplicações e design web.
           </motion.div>
           
           <motion.p
@@ -96,7 +93,7 @@ export function Hero() {
           >
             <Button
               onClick={scrollToProjects}
-              className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-amber-600 hover:bg-yellow-600 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               Veja meu trabalho
             </Button>

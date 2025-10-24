@@ -8,24 +8,24 @@ export function Skills() {
     {
       title: 'Frontend',
       skills: [
-        { name: 'React/Next.js', level: 95, color: 'from-gray-400 to-white-600' },
-        { name: 'TypeScript/JavaScript', level: 90, color: 'from-blue-500 to-blue-700' },
-        { name: 'Tailwind CSS', level: 80, color: 'from-cyan-400 to-cyan-600' }
+        { name: 'React/Next.js', level: 95, color: 'from-gray-400 to-white-700' },
+        { name: 'TypeScript/JavaScript', level: 90, color: 'from-blue-400 to-blue-700' },
+        { name: 'Tailwind CSS', level: 80, color: 'from-cyan-400 to-cyan-700' }
       ]
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js', level: 95, color: 'from-green-500 to-green-700' },
-        { name: 'Ruby', level: 70, color: 'from-red-500 to-red-700' },
-        { name: 'Python', level: 70, color: 'from-yellow-400 to-yellow-600' }
+        { name: 'Node.js', level: 95, color: 'from-green-400 to-green-700' },
+        { name: 'Ruby', level: 70, color: 'from-red-400 to-red-700' },
+        { name: 'Python', level: 70, color: 'from-violet-400 to-violet-700' }
       ]
     },
     {
       title: 'Banco de Dados',
       skills: [
-        { name: 'MySQL', level: 75, color: 'from-pink-400 to-pink-600' },
-        { name: 'PostgreSQL', level: 60, color: 'from-indigo-400 to-indigo-600' }
+        { name: 'MySQL', level: 75, color: 'from-rose-400 to-rose-700' },
+        { name: 'PostgreSQL', level: 60, color: 'from-indigo-400 to-indigo-700' }
       ]
     }
   ]

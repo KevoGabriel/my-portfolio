@@ -40,7 +40,7 @@ export function About() {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-gray-900">
+    <section id="sobre" className="py-20 bg-zinc-900">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -50,7 +50,7 @@ export function About() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl text-white mb-6">
-            About Me
+            Sobre mim
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-700 mx-auto"></div>
         </motion.div>

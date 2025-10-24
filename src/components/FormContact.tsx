@@ -14,7 +14,7 @@ export function FormContact() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
         >
-            <Card className="p-8 bg-gray-900/50 border-white/10">
+            <Card className="p-8 bg-zinc-900/60 border-white/10">
               <h3 className="text-2xl text-white mb-6">Me mande uma mensagem!</h3>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
@@ -22,14 +22,14 @@ export function FormContact() {
                     <label className="text-gray-300 text-sm mb-2 block">Nome</label>
                     <Input
                       placeholder="Como posso te chamar?"
-                      className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                      className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-amber-500"
                     />
                   </div>
                   <div>
                     <label className="text-gray-300 text-sm mb-2 block">Sobrenome</label>
                     <Input
                       placeholder="Seu sobrenome"
-                      className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                      className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-amber-500"
                     />
                   </div>
                 </div>
@@ -39,7 +39,7 @@ export function FormContact() {
                   <Input
                     type="email"
                     placeholder="your.email@example.com"
-                    className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                    className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-amber-500"
                   />
                 </div>
                 
@@ -47,7 +47,7 @@ export function FormContact() {
                   <label className="text-gray-300 text-sm mb-2 block">Assunto</label>
                   <Input
                     placeholder="Sobre o que você quer falar..."
-                    className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
+                    className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-amber-500"
                     />
                 </div>
                 
@@ -56,11 +56,10 @@ export function FormContact() {
                   <Textarea
                     placeholder="Me conte mais sobre sua ideia..."
                     rows={5}
-                    className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500 resize-none"
+                    className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-amber-500 resize-none"
                     />
                 </div>
-                
-                <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3">
+                <Button className="w-full bg-amber-600 hover:bg-yellow-600 text-white py-3">
                   Enviar Mensagem
                 </Button>
               </form>
