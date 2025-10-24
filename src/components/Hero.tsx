@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react'
 import { Button } from './ui/button.tsx'
-import { Github, Linkedin, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail, FileUser } from 'lucide-react'
 
 export function Hero() { 
   const scrollToProjects = () => { // Função para rolar até a seção de projetos
@@ -102,11 +102,13 @@ export function Hero() {
               {[
                 { icon: Github, href: 'https://github.com/KevoGabriel' },
                 { icon: Linkedin, href: 'https://linkedin.com/in/kevinsehnem' },
-                { icon: Mail, href: 'mailto: kevinsehnem123@gmail.com'}
+                { icon: FileUser, href: 'https://drive.google.com/uc?export=download&id=1kycN4tHd4RTkaX2ch5pUxE6kyHtgJ3BE'}
               ].map(({ icon: Icon, href }, index) => (
                 <motion.a
                   key={index}
                   href={href}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.2 + index * 0.1 }}
