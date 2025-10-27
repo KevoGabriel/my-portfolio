@@ -13,51 +13,57 @@ export function Projects() {
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
       technologies: ['Next.js', 'Tailwind', 'Clerk', 'PostgreSQL', 'TypeScript'],
       github: 'https://github.com/KevoGabriel/postup',
+      isLive: true,
       live: '/',
       featured: true
     },
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
-      github: '#',
-      live: '#',
+      title: 'Esse Portfólio',
+      description: 'Um portfólio moderno e responsivo construído a base de React, Framer Motion e Tailwind CSS, apresentando projetos e habilidades de forma prática e visualmente atraente.',
+      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
+      technologies: ['React', 'Framer Motion', 'Tailwind', 'TypeScript'],
+      github: 'https://github.com/KevoGabriel/my-portfolio',
+      isLive: true,
+      live: '/',
       featured: true
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and data visualization using Chart.js.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'Tailwind'],
-      github: '#',
+      title: 'Simon Game',
+      description: 'Um clone simples do clássico jogo "Simon Says", desenvolvido com HTML, CSS e JavaScript puro. O jogador deve repetir sequências de luzes e sons com cores diferentes. A cada rodada, a sequência aumenta em um item, testando sua memória e atenção.',
+      image: '../assets/simongame.jpg',
+      technologies: ['JavaScript', 'DOM Manipulation', 'CSS', 'jQuery'],
+      github: 'https://github.com/KevoGabriel/simongame',
+      isLive: true,
+      live: 'https://kevogabriel.github.io/simongame/',
+      featured: false
+    },
+    {
+      title: 'Tindog - Tinder para cães',
+      description: 'Uma landing page fictícia e divertida para um aplicativo de encontros para cães, apresentando design divertido e fiel ao tema. Um projeto inicial para fins acadêmicos com pratica em HTML e Bootstrap.',
+      image: '../assets/tindog.jpg',
+      technologies: ['HTML', 'CSS', 'Bootstrap'],
+      github: 'https://github.com/KevoGabriel/kevintindog',
+      isLive: true,
+      live: 'https://kevogabriel.github.io/kevintindog/',
+      featured: false
+    },
+    {
+      title: 'Medieval Cause',
+      description: 'Um jogo 2D de plataforma e ação desenvolvido em Python e Pygame. Jogo simples com temática medieval, onde foi praticado conceitos em desenvolvimento de jogos, POO e manipulação de assets gráficos e sonoros.',
+      image: '../assets/medievalCause.jpg',
+      technologies: ['Python', 'Pygame' , 'Assets Grátis'],
+      github: 'https://github.com/KevoGabriel/medievalCause',
+      isLive: false,
       live: '#',
       featured: false
     },
     {
-      title: 'Social Media Analytics',
-      description: 'A dashboard for social media analytics with real-time data processing, custom visualizations, and automated reporting.',
+      title: 'Test de API Restful com Node.js',
+      description: 'Este é um projeto básico utilizando Node.js, Express e EJS. Ele serve como uma aplicação web simples que renderiza páginas dinâmicas, com finalidade de consultar uma API externa de Segredos da App Brewery. Projeto com fins acadêmicos e demonstração prática com experiencia em Express e API consumption.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
-      technologies: ['Python', 'Django', 'React', 'D3.js'],
-      github: '#',
-      live: '#',
-      featured: false
-    },
-    {
-      title: 'AI Chat Interface',
-      description: 'An intelligent chat interface with natural language processing, context awareness, and multi-language support.',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop',
-      technologies: ['React', 'OpenAI API', 'Node.js', 'WebSocket'],
-      github: '#',
-      live: '#',
-      featured: false
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website with smooth animations, dark theme, and optimized performance built with modern web technologies.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-      technologies: ['Next.js', 'Framer Motion', 'Tailwind', 'TypeScript'],
-      github: '#',
+      technologies: ['Node.js', 'Express', 'EJS', 'API Consumption'],
+      github: 'https://github.com/KevoGabriel/TestAPI-Rest',
+      isLive: false,
       live: '#',
       featured: false
     }
@@ -65,6 +71,7 @@ export function Projects() {
 
   const featuredProjects = projects.filter(p => p.featured)
   const otherProjects = projects.filter(p => !p.featured)
+
 
   return (
     <section id="projetos" className="py-20 bg-zinc-900">
@@ -110,6 +117,8 @@ export function Projects() {
                     >
                       <Github className="w-5 h-5" />
                     </motion.a>
+                    {/* Lógica para link se estiver ativo */}
+                    {project.isLive && (
                     <motion.a
                       href={project.live}
                       whileHover={{ scale: 1.1 }}
@@ -117,7 +126,7 @@ export function Projects() {
                       className="w-10 h-10 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-all duration-300"
                     >
                       <ExternalLink className="w-5 h-5" />
-                    </motion.a>
+                    </motion.a>)}
                   </div>
                 </div>
                 
@@ -179,12 +188,15 @@ export function Projects() {
                     >
                       <Github className="w-4 h-4" />
                     </a>
+                    {/* Lógica para link se estiver ativo */}
+                    {project.isLive && (
                     <a
                       href={project.live}
                       className="w-8 h-8 bg-black/70 rounded-full flex items-center justify-center text-white hover:bg-amber-500 transition-all duration-300"
                     >
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
+                    <ExternalLink className="w-5 h-5" />
+                    </a>)}
+
                   </div>
                 </div>
                 

@@ -92,7 +92,7 @@ export function About() {
                 "Trabalho em equipe",
                 "Aprendiz nato",
                 "Orientado a resultados",
-              ].map((trait, index) => ( // trait é o item do array para cada iteração do map
+              ].map((trait) => ( // trait é o item do array para cada iteração do map
                 <span
                   key={trait} // Usando trait como chave única para cada span
                   className="px-4 py-2 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full text-sm"

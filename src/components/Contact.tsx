@@ -122,7 +122,7 @@ export function Contact() {
         >
           <p className="text-gray-400">
             © 2025 Kevin Sehnem. Construído com ❤️ usando React e Tailwind CSS.
-            Inspirado por um design feito por Alex Johnson, Figma.
+            Inspirado por um design Figma.
           </p>
         </motion.div>
       </div>
