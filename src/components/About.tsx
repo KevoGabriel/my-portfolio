@@ -67,7 +67,7 @@ export function About() {
             <img
               src="../assets/profile.jpg"
               alt="Foto de Kevin Gabriel Sehnem"
-              className="w-[145px] h-[145px] flex align-middle rounded-full border-2 border-amber-300 object-cover"
+              className="w-[150px] h-[150px] flex align-middle rounded-full border-2 border-amber-300 object-cover"
               />
             </div>              
             <h3 className="text-2xl text-white mb-4">
