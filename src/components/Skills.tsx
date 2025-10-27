@@ -17,8 +17,8 @@ export function Skills() {
       title: 'Backend',
       skills: [
         { name: 'Node.js', level: 95, color: 'from-green-400 to-green-700' },
-        { name: 'Ruby', level: 70, color: 'from-red-400 to-red-700' },
-        { name: 'Python', level: 70, color: 'from-violet-400 to-violet-700' }
+        { name: 'Express.js', level: 70, color: 'from-orange-400 to-orange-700' },
+        { name: 'Ruby', level: 70, color: 'from-red-400 to-red-700' }
       ]
     },
     {
