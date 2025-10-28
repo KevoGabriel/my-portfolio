@@ -29,7 +29,7 @@ export function Projects() {
     },
     {
       title: 'Simon Game',
-      description: 'Um clone simples do clássico jogo "Simon Says", desenvolvido com HTML, CSS e JavaScript puro. O jogador deve repetir sequências de luzes e sons com cores diferentes. A cada rodada, a sequência aumenta em um item, testando sua memória e atenção.',
+      description: 'Um clone simples do clássico jogo "Simon Says", desenvolvido com HTML, CSS e JavaScript. Um verdadeiro teste de memória.',
       image: '../assets/simongame.jpg',
       technologies: ['JavaScript', 'DOM Manipulation', 'CSS', 'jQuery'],
       github: 'https://github.com/KevoGabriel/simongame',
@@ -39,7 +39,7 @@ export function Projects() {
     },
     {
       title: 'Tindog - Tinder para cães',
-      description: 'Uma landing page fictícia e divertida para um aplicativo de encontros para cães, apresentando design divertido e fiel ao tema. Um projeto inicial para fins acadêmicos com pratica em HTML e Bootstrap.',
+      description: 'Uma landing page fictícia e divertida para um aplicativo de encontros para cães. Um projeto inicial para fins acadêmicos.',
       image: '../assets/tindog.jpg',
       technologies: ['HTML', 'CSS', 'Bootstrap'],
       github: 'https://github.com/KevoGabriel/kevintindog',
@@ -49,7 +49,7 @@ export function Projects() {
     },
     {
       title: 'Medieval Cause',
-      description: 'Um jogo 2D de plataforma e ação desenvolvido em Python e Pygame. Jogo simples com temática medieval, onde foi praticado conceitos em desenvolvimento de jogos, POO e manipulação de assets gráficos e sonoros.',
+      description: 'Um jogo 2D de plataforma e ação desenvolvido em Python e Pygame. Foi praticado conceitos de POO e manipulação de assets.',
       image: '../assets/medievalCause.jpg',
       technologies: ['Python', 'Pygame' , 'Assets Grátis'],
       github: 'https://github.com/KevoGabriel/medievalCause',
@@ -59,7 +59,7 @@ export function Projects() {
     },
     {
       title: 'Test de API Restful com Node.js',
-      description: 'Este é um projeto básico utilizando Node.js, Express e EJS. Ele serve como uma aplicação web simples que renderiza páginas dinâmicas, com finalidade de consultar uma API externa de Segredos da App Brewery. Projeto com fins acadêmicos e demonstração prática com experiencia em Express e API consumption.',
+      description: 'Uma aplicação web que demonstra prática em APIs, com finalidade de consultar uma API pública. Um projeto inicial para fins acadêmicos.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
       technologies: ['Node.js', 'Express', 'EJS', 'API Consumption'],
       github: 'https://github.com/KevoGabriel/TestAPI-Rest',
