@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# My Portfolio  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição  
+Este é o meu portfólio pessoal — um site moderno e responsivo construído com React, Framer Motion e Tailwind CSS para **mostrar meus projetos, habilidades e experiências** de forma visualmente atraente.  
+Ele serve como vitrine para meus estudos e trabalhos em desenvolvimento web.
 
-## Available Scripts
+## Tecnologias usadas  
+- React (com TypeScript)  
+- Framer Motion (animações)  
+- Tailwind CSS (estilização)  
+- Vercel (deploy)  
+- Outras ferramentas: ESLint, Prettier, etc.  
 
-In the project directory, you can run:
+## Funcionalidades principais  
+- Página inicial com introdução e destaque de projetos  
+- Seção de “Projetos em destaque” e “Outros projetos”  
+- Cards interativos com animações de hover (imagem, ícones)  
+- Links para GitHub e para os projetos ao vivo (quando disponíveis)  
+- Layout responsivo para dispositivos móveis, tablets e desktop  
+- Uso de ícones e imagens de fallback para garantir boa experiência  
 
-### `npm start`
+## Como rodar localmente  
+1. Clone este repositório:  
+   ```bash
+   git clone https://github.com/KevoGabriel/my-portfolio.git
+   cd my-portfolio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Instale as dependências:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install
 
-### `npm test`
+ou
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+yarn
 
-### `npm run build`
+Inicie o servidor de desenvolvimento:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ou
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+yarn dev
 
-### `npm run eject`
+O site abrirá em http://localhost:3000 (ou outra porta configurada).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para produção, execute:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm run build
+    npm run start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ou equivalente com yarn.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Deploy
 
-## Learn More
+    Este projeto está hospedado no Vercel: https://kevinsehnem.vercel.app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    A cada push para o branch principal, o deploy é feito automaticamente (CI/CD configurado).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Estrutura de pastas relevante
 
-### Code Splitting
+/
+├── src/
+│   ├── components/    ← Componentes React reutilizáveis  
+│   ├── pages/         ← Páginas principais  
+│   └── styles/        ← Arquivos de estilo personalizados (se houver)  
+├── public/            ← Imagens, favicon, assets estáticos  
+├── tailwind.config.js  
+├── postcss.config.js  
+└── package.json
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Sugestões de melhorias futuras
 
-### Analyzing the Bundle Size
+    - Adicionar seção de “Blog” ou “Artigos” para mostrar conteúdo escrito
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    - Implementar dark mode toggler (alternar tema claro/escuro)
 
-### Making a Progressive Web App
+    - Tornar formulario funcional
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    - Versão em inglês
 
-### Advanced Configuration
+Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Este repositório está licenciado sob a MIT License
 
-### Deployment
+— fique à vontade para estudar, usar e compartilhar o código.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Criado por Kevin (Kevo Gabriel).
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Obrigado por visitar meu portfólio! 🚀
